@@ -25,7 +25,6 @@ body {
 /* nav aside */
 
 #nav_aside {
-    background-color: red;
     display: flex;
 }
 
@@ -36,7 +35,7 @@ body {
     position: fixed;
     margin-bottom: 70px;
     margin-top: 200px;
-    margin-left: 95px;
+    margin-left: 10px;
 }
 
 #nav_aside ul li {
