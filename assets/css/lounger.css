@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Font: Work sans
+Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Page Setting */
+
+body {
+    background-color: #2e2e2e;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+
+/* nav aside */
+
+#nav_aside {
+    background-color: red;
+    display: flex;
+}
+
+#nav_aside ul {
+    list-style: none;
+    text-align: center;
+    line-height: 7em;
+    position: fixed;
+    margin-bottom: 70px;
+    margin-top: 200px;
+    margin-left: 95px;
+}
+
+#nav_aside ul li {
+    display: flex;
+    align-items: center;
+}
+
+#nav_aside ul li a {
+    color: rgb(115, 115, 115);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#nav_aside ul li a:hover {
+    color: #fff;
+    transition: all 1s;
+}
+
+
+/*--- nav_aside ---*/
+
+#nav_aside span {
+    font-size: 0.8em;
+    color: #867772;
+}
+
+#nav_aside a {
+    color: rgb(115, 115, 115);
+    padding-left: 31px;
+}
+
+#nav_aside a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#nav_aside a.active,
+#nav_aside a.lighter {
+    color: white;
+}
+
+.side-li a.active::before {
+    content: "";
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    margin: 45px 0 0 -44px;
+}
+
+.side-li:not(:last-child)::before {
+    content: "";
+    border-right: 1px solid #867772;
+    position: relative;
+    top: 37px;
+    left: 5px;
+    padding: 20px 11px;
+}
+
+.side-li:last-child:before {
+    content: "";
+    padding: 0 11px;
+}
+
+
+/*--- ---*/
+
+
+/* header */
+
+header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 3%;
+    margin-left: 2%;
+}
+
+#nav_one {
+    width: 50%;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-right: -5%;
+}
+
+#nav_one ul {
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+}
+
+#nav_one ul li:nth-of-type(2) {
+    padding-left: 5%;
+}
+
+#nav_one ul li:last-of-type {
+    padding: 0 15% 0 5%;
+}
+
+#nav_one a {
+    text-decoration: none;
+    color: #867772;
+    transition: all 0.7s;
+}
+
+#nav_one a:hover {
+    color: #eaccc2;
+    text-decoration: underline;
+}
+
+
+/*--- section thelounger ---*/
+
+#theLounger .lounger {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lounger .img {
+    background: url("../img/section-voyager.jpg") center/cover no-repeat;
+    width: 50vw;
+    height: 100vh;
+}
+
+.lounger .loungerContent {
+    width: 50%;
+    padding: 10% 3%;
+}
+
+.loungerContent h2 {
+    color: #eaccc2;
+    font-size: 3.3rem;
+    font-weight: 300;
+    margin-bottom: 10%;
+}
+
+.loungerContent p {
+    width: 75%;
+    padding-top: 3%;
+    color: rgb(115, 115, 115);
+    line-height: 2.1rem;
+    font-size: 1.35rem;
+}
